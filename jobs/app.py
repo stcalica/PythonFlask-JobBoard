@@ -1,8 +1,8 @@
-from flask import Flask, render_templates
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 
 @app.route('/jobs')
 def jobs():
-    return render_templates('index.html')
+    return render_template('index.html')
